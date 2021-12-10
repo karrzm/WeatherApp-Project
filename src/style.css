@@ -12,6 +12,7 @@ ul {
   font-family: "Hind", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  color: #273135;
 }
 li::first-letter {
   text-transform: capitalize;
@@ -21,7 +22,7 @@ a {
 }
 
 .weather-app-wrapper {
-  max-width: 590px;
+  max-width: 600px;
   margin: 65px auto;
 }
 .weather-app {
@@ -32,7 +33,6 @@ a {
 .overview {
   margin-bottom: 20px;
 }
-
 .weather-temperature img {
   margin-right: 10px;
   height: 64px;
@@ -49,4 +49,9 @@ a {
   position: relative;
   font-size: 16px;
   top: -25px;
+}
+
+.weather-temperature .active {
+  color: #002939;
+  cursor: default;
 }
