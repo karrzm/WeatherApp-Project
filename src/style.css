@@ -14,6 +14,9 @@ ul {
   line-height: 20px;
   color: #273135;
 }
+img {
+  margin-bottom: 25px;
+}
 li::first-letter {
   text-transform: capitalize;
 }
@@ -22,7 +25,7 @@ a {
 }
 
 .weather-app-wrapper {
-  max-width: 600px;
+  max-width: 650px;
   margin: 65px auto;
 }
 .weather-app {
@@ -54,4 +57,24 @@ a {
 .weather-temperature .active {
   color: #002939;
   cursor: default;
+}
+
+.forecast-week {
+  margin-top: 20px;
+  text-align: center;
+}
+.card {
+  min-width: 120px;
+}
+.card-body {
+  font-family: "Hind", sans-serif;
+  opacity: 0.8;
+}
+
+.forecast-date {
+  font-size: 16px;
+}
+
+.forecast-max-min {
+  font-size: 13px;
 }
