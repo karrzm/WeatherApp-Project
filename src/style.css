@@ -60,21 +60,19 @@ a {
 }
 
 .forecast-week {
-  margin-top: 20px;
-  text-align: center;
-}
-.card {
-  min-width: 120px;
-}
-.card-body {
   font-family: "Hind", sans-serif;
-  opacity: 0.8;
+  margin-top: 5px;
+  text-align: center;
+  color: #000;
 }
 
+.forecast-date .forecast-min {
+  opacity: 0.5;
+}
 .forecast-date {
   font-size: 16px;
 }
 
-.forecast-max-min {
+.forecast-weather {
   font-size: 13px;
 }
