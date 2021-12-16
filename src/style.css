@@ -1,6 +1,7 @@
 h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
+  font-weight: bolder;
   line-height: 25px;
   margin-bottom: 5px;
   margin-top: 20px;
@@ -22,6 +23,7 @@ li::first-letter {
 }
 a {
   text-decoration: none;
+  color: #8c8c8d;
 }
 
 .weather-app-wrapper {
@@ -30,8 +32,9 @@ a {
 }
 .weather-app {
   padding: 30px;
-  border: 1px solid #a2a4aa;
+  border: 1px solid #c1c1c4;
   border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
 .weather-content {
   margin-left: 55px;
