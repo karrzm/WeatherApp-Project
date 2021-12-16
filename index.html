@@ -51,33 +51,35 @@
               <li id="description"></li>
             </ul>
           </div>
-          <div class="row">
-            <div class="col-6">
-              <div class="clear-fix weather-temperature">
-                <img
-                  src=""
-                  alt="Cloudy"
-                  class="float-left"
-                  id="icon"
-                  width="100"
-                />
-                <span class="float-left">
-                  <strong id="temperature"></strong
-                  ><span class="units"
-                    ><a href="#" id="celsius" class="active">°C</a> |
-                    <a href="#" id="fahrenheit">°F</a></span
-                  ></span
-                >
+          <div class="weather-content">
+            <div class="row">
+              <div class="col-6">
+                <div class="clear-fix weather-temperature">
+                  <img
+                    src=""
+                    alt="Cloudy"
+                    class="float-left"
+                    id="icon"
+                    width="100"
+                  />
+                  <span class="float-left">
+                    <strong id="temperature"></strong
+                    ><span class="units"
+                      ><a href="#" id="celsius" class="active">°C</a> |
+                      <a href="#" id="fahrenheit">°F</a></span
+                    ></span
+                  >
+                </div>
+              </div>
+              <div class="col-6">
+                <ul>
+                  <li>Humidity: <span id="humidity"></span>%</li>
+                  <li>Wind: <span id="wind"></span> km/h</li>
+                </ul>
               </div>
             </div>
-            <div class="col-6">
-              <ul>
-                <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span> km/h</li>
-              </ul>
-            </div>
+            <div class="forecast-week" id="forecast"></div>
           </div>
-          <div class="forecast-week" id="forecast"></div>
         </div>
         <small>
           <a
