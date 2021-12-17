@@ -101,6 +101,22 @@ function displayTemperature(response) {
   getForecast(response.data.coord);
 }
 
+function currentPosition(position) {
+  let lat = position.coords.latitude;
+  let long = position.coords.longitude;
+  let unit = "metric";
+  let apiKey = "4f7af84cb966fae648af6c5241bc62a5";
+  let apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apiKey}&units=${unit}`;
+
+  axios.get(apiURL).then(displayTemperature);
+}
+function currentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(currentPosition);
+}
+let positionButton = document.querySelector("#current-location");
+positionButton.addEventListener("click", currentLocation);
+
 function search(city) {
   let apiKey = "4f7af84cb966fae648af6c5241bc62a5";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
